@@ -186,7 +186,7 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
-    box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(126, 213, 111, 0.25); }
     .card__side--front {
       background-color: red; }
     .card__side--back {

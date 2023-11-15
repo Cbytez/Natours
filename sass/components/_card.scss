@@ -21,7 +21,7 @@
 
 
         &--front{
-            background-color: $color-white;
+            background-color: $color-black;
         }
 
         &--back{
@@ -46,16 +46,17 @@
     &__picture{
         background-size: cover;
         height: 23rem;
+        
         &--1{
             background-image: url(../../img/nat-5.jpg);
         }
 
         &--2{
-            background-image: url(../../img/nat-5.jpg);
+            background-image: url(../../img/nat-6.jpg);
         }
 
         &--3{
-            background-image: url(../../img/nat-5.jpg);
+            background-image: url(../../img/nat-7.jpg);
         }
     }
 } 

@@ -17,6 +17,7 @@
         width: 100%;
         backface-visibility: hidden;
         border-radius: 5px;
+        overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-secondary, .25);
 
 
@@ -25,7 +26,7 @@
         }
 
         &--back{
-            background-color: orangered;
+            // background-color: orangered;
             transform: rotateY(180deg);
 
             &-1{
@@ -56,15 +57,15 @@
         height: 23rem;
         background-blend-mode: screen;
 
-        &--1{
+        &-1{
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../../img/nat-5.jpg);
         }
 
-        &--2{
+        &-2{
             background-image: linear-gradient(to right bottom, $color-secondary, $color-Tertiary), url(../../img/nat-6.jpg);
         }
 
-        &--3{
+        &-3{
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../../img/nat-7.jpg);
         }
     }

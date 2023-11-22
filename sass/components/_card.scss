@@ -90,7 +90,11 @@
         &--2{
             background-image: linear-gradient(to right bottom, rgba($color-secondary, .85), rgba($color-Tertiary, .85));
         }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
         }
+        
     }
 
     &__details{
@@ -105,20 +109,39 @@
                 font-size: 1.5rem;
                 padding: 1rem;
 
-
-                &:not(:last-child){
-                    border-bottom: 1px solid $color-grey-light-2;
-                }
+                    &:not(:last-child){
+                        border-bottom: 1px solid $color-grey-light-2;
+                    }
             }
         }
     }
 
-    // Back Side Styling
+    // Back Side Styling.
     &__cta{
+        color: $color-black;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
     }
 
-} 
+    &__price-box{
+        text-align: center;
+        color: $color-black;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__price-value{
+        font-size: 6rem;
+        font-weight: 300;
+    }
+
+}

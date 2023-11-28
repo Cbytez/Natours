@@ -329,7 +329,7 @@ body {
 .stories {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(255, 255, 255, 0.1);
+  box-shadow: 0 3rem 6rem rgba(255, 255, 255, 0.2);
   background-color: #28b485;
   border-radius: 3px;
   padding: 6rem 6rem 6rem 9rem;

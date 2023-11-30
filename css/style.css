@@ -118,11 +118,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: auto !important;
+  height: auto;
   width: 100%;
   z-index: -1;
   text-align: center;
   opacity: .15; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;

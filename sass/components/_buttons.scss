@@ -54,6 +54,25 @@
 		}
     }
 
+	&--greenb{
+    	background-color: $color-primary;
+    	color: $color-black;
+
+        &::after{
+            background-color: white;
+        }
+
+		&:hover{
+			transform: translateY(-.3rem);
+			box-shadow: 0 1rem 1rem rgba($color-black, 2seconds);
+	
+			&::after{
+				transform: scaleX(1.4) scaleY(1.6);
+				opacity: 0;
+			}
+		}
+    }
+
 
     &::after{
     	content: "";

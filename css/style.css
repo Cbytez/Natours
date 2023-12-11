@@ -470,6 +470,32 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+.footer {
+  background-color: #000000;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__link:link, .footer__link:visited {
+    color: #7ed56f;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+    .footer__link:link:hover, .footer__link:link:active, .footer__link:visited:hover, .footer__link:visited:active {
+      color: #55c57a;
+      box-shadow: 0 1rem 2rem rgba(41, 152, 255, 0.4);
+      transform: rotate(5deg) scale(1.3); }
+  .footer__list {
+    list-style: none; }
+  .footer__list-item {
+    display: inline-block; }
+    .footer__list-item:not(:last-child) {
+      margin-right: 1rem; }
+
 .grid-test {
   color: #ffffff;
   font-weight: bold;

@@ -569,12 +569,13 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#2998ff, #5643fa);
+  background-image: radial-gradient(#000000, #333);
   z-index: 1000;
   transform: scale(95); }
 
 .navigation__button {
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   height: 7rem;
   width: 7rem;
   position: fixed;
@@ -602,13 +603,24 @@ body {
   list-style: none;
   text-align: center; }
 
-.navigation__link {
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
   font-size: 3rem;
   font-weight: 400;
-  color: #000000;
+  padding: 1rem 2rem;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, #7ed56f 0%, #7ed56f 50%, #ffffff 50%); }
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #5643fa 50%);
+  background-size: 220%;
+  transition: all .4s; }
+  .navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+    display: inline-block; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  transform: translateX(1rem); }
 
 .navigation__item {
   margin: 1rem; }

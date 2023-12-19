@@ -5,6 +5,13 @@
 1200px 1800px:    Normal styles apply
 1800px +:         Big Desktop
 */
+/*
+  $breakpoint argument choices:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -46,6 +53,9 @@ html {
     html {
       font-size: 50%; } }
   @media screen and (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
     html {
       font-size: 50%; } }
 

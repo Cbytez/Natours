@@ -582,6 +582,9 @@ body {
   background-color: #000000;
   padding: 10rem 0;
   font-size: 1.4rem; }
+  @media (max-width: 56.25em) {
+    .footer {
+      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -591,6 +594,10 @@ body {
   .footer__navigation {
     border-top: 1px solid #2998ff;
     padding-top: 2rem; }
+    @media (max-width: 56.25em) {
+      .footer__navigation {
+        width: 100%;
+        text-align: center; } }
   .footer__link:link, .footer__link:visited {
     color: #7ed56f;
     text-decoration: none;
@@ -610,6 +617,10 @@ body {
     border-top: 1px solid #2998ff;
     padding-top: 2rem;
     float: right; }
+    @media (max-width: 56.25em) {
+      .footer__copyright {
+        width: 100%;
+        float: none; } }
 
 .grid-test {
   color: #ffffff;
@@ -626,7 +637,8 @@ body {
         margin-bottom: 6rem; } }
   @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;

@@ -10,7 +10,11 @@
 
     @include respond(tab-port){
         width: 100%;
-        padding: 3rem 3rem 3rem 4rem;
+        padding: 3rem 2rem 3rem 4rem;
+    }
+
+    @include respond(phone){
+        transform: skewX(0);
     }
 
     
@@ -21,8 +25,14 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
-        position: relative;        
+        position: relative;  
+        
+        @include respond(phone){
+            transform: translateX(-3rem) skewX(0);
+        }
     }
+
+    
 
     &__img{
         height: 100%;
@@ -32,6 +42,10 @@
 
     &__text{
         transform: skewX(12deg);
+
+        @include respond(phone){
+            transform: skewX(0);
+        }
     }
 
     &__caption{

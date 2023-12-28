@@ -570,7 +570,10 @@ body {
   @media (max-width: 56.25em) {
     .stories {
       width: 100%;
-      padding: 3rem 3rem 3rem 4rem; } }
+      padding: 3rem 2rem 3rem 4rem; } }
+  @media (max-width: 37.5em) {
+    .stories {
+      transform: skewX(0); } }
   .stories__shape {
     width: 15rem;
     height: 15rem;
@@ -579,12 +582,18 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .stories__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .stories__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .5s; }
   .stories__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .stories__text {
+        transform: skewX(0); } }
   .stories__caption {
     position: absolute;
     top: 50%;
@@ -895,6 +904,27 @@ body {
   height: 50rem;
   border-radius: 5px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (max-width: 75em) {
+    .booking {
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6) 0%, transparent 60%), url(../img/nat-10.jpg);
+      background-size: cover;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); } }
+  @media (max-width: 56.25em) {
+    .booking {
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6) 0%, transparent 60%), url(../img/nat-10.jpg);
+      background-size: cover;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+      width: auto; } }
   .booking__form {
-    width: 50%;
+    width: 75%;
     padding: 6rem; }
+    @media (max-width: 75em) {
+      .booking__form {
+        width: 65%; } }
+    @media (max-width: 56.25em) {
+      .booking__form {
+        width: 95%; } }

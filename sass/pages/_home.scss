@@ -56,8 +56,34 @@
     border-radius: 5px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
-    &__form{
-        width: 50%;
+    @include respond(tab-land){
+        background-image: linear-gradient(to top, rgba($color-white, .6) 0%, transparent 60%), url(../img/nat-10.jpg);
+        background-size: cover;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        
+    }
+
+    @include respond(tab-port){
+        background-image: linear-gradient(to top, rgba($color-white, .6) 0%, transparent 60%), url(../img/nat-10.jpg);
+        background-size: cover;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        width: auto;
+    }
+
+    &__form{        
+        width: 75%;
         padding: 6rem;
+
+        @include respond(tab-land){
+            width: 65%;            
+        }
+
+        @include respond(tab-port){
+            width: 95%;
+        }
     }
 }

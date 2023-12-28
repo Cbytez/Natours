@@ -1,5 +1,6 @@
 .form{
     color: $color-black;
+    font-weight: bold;
 
     &__group:not(:last-child){
         
@@ -53,8 +54,15 @@
     }
 
     &__radio-group{
+        font-weight: bold;
         width: 95%;
         display: inline;
+       
+
+        @include respond(tab-land){
+            width: 100%;
+            display: inline-block;
+        }
     }
 
     &__radio-input{

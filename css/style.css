@@ -534,6 +534,10 @@ body {
     width: 33.33%;
     display: table-cell;
     vertical-align: middle; }
+    @media (max-width: 37.5em) {
+      .popup__left {
+        width: 0;
+        display: none; } }
   .popup__right {
     width: 66.67%;
     display: table-cell;

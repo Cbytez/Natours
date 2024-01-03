@@ -21,7 +21,13 @@
         display: table;
         overflow: hidden;
         transition: all .4s;
-        transform: translate(-50%, -50%) scale(.5);        
+        transform: translate(-50%, -50%) scale(.5); 
+        
+        @include respond (phone){
+            width: 95%;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
     }
 
     &__left{
@@ -29,9 +35,10 @@
         display: table-cell;
         vertical-align: middle;
 
-        @include respond(phone){
-            width: 0;
-            display: none;
+        @include respond (phone){
+            width: 50%;
+            display: table-row;
+            vertical-align: top;
         }
     }
 
@@ -41,6 +48,12 @@
         vertical-align: middle;
         padding: 3rem 5rem;
 
+
+        @include respond (phone){
+            width: 50%;
+            display: table-row;
+            vertical-align: bottom;
+        }
         
     }
 
@@ -50,12 +63,16 @@
     }
 
     &__text{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin-bottom: 4rem;
         column-count: 2;
         column-gap: 4rem;
         column-rule: 1px solid $color-primary;
-        hyphens: auto;        
+        hyphens: auto;  
+        
+        @include respond (phone){
+            column-gap: 2rem;
+        }
     }
 
     // Open states.
@@ -86,7 +103,7 @@
         &:hover{
             color: $color-primary;
         }
-    }
-
+    }   
     
+
 }

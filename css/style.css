@@ -606,7 +606,6 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    shape-outside: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
     overflow: hidden; }
@@ -614,8 +613,8 @@ body {
       .stories__shape {
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        width: 15rem;
-        height: 15rem; } }
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%); } }
     @media (max-width: 37.5em) {
       .stories__shape {
         transform: translateX(-3rem) skewX(0); } }

@@ -6,4 +6,4 @@
  This website still has alot to offer in terms of future utillization for JavaScript use and implementation which in a future time I will explore and implement. There are differences in this website that set it apart from the tutorial version. 
  Those differences are different color use, box appearance changes on smaller devices, and different popup design changes. Original tutorial version can be found by link in the footer section of my edited version.
 
-Dark editied version can be found at: https://www.cbytez.com/Projects/Natours/Natours.html.
+I had the link to this page up but the hosting company I use is currently doing migrations to a new server and platform. As soon as that is done I will repost.
